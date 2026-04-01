@@ -8,3 +8,58 @@
 [submodule "data/lua/IntegrationTests"]
 	path = src/plugins/lua/lua/IntegrationTests
 	url = https://github.com/macroquest/integration-tests.git
+[submodule "plugins/MQ2AutoAccept"]
+	path = plugins/MQ2AutoAccept
+	url = https://github.com/RedGuides/MQ2AutoAccept.git
+[submodule "plugins/MQ2AutoLoot"]
+	path = plugins/MQ2AutoLoot
+	url = https://github.com/RedGuides/MQ2AutoLoot.git
+	branch = master
+[submodule "plugins/MQ2Dan"]
+	path = plugins/MQ2Dan
+	url = https://github.com/dannuic/MQ2Dan.git
+	branch = master
+[submodule "plugins/MQ2Debuffs"]
+	path = plugins/MQ2Debuffs
+	url = https://github.com/RedGuides/MQ2Debuffs.git
+	branch = master
+[submodule "plugins/MQ2EasyFind"]
+	path = plugins/MQ2EasyFind
+	url = https://github.com/brainiac/MQ2EasyFind.git
+	branch = master
+[submodule "plugins/MQ2EQBC"]
+	path = plugins/MQ2EQBC
+	url = https://github.com/RedGuides/MQ2EQBC.git
+	branch = master
+[submodule "plugins/MQ2Events"]
+	path = plugins/MQ2Events
+	url = https://github.com/RedGuides/MQ2Events.git
+	branch = master
+[submodule "plugins/MQ2Exchange"]
+	path = plugins/MQ2Exchange
+	url = https://github.com/RedGuides/MQ2Exchange.git
+	branch = master
+[submodule "plugins/MQ2Log"]
+	path = plugins/MQ2Log
+	url = https://github.com/RedGuides/MQ2Log.git
+	branch = master
+[submodule "plugins/MQ2MoveUtils"]
+	path = plugins/MQ2MoveUtils
+	url = https://github.com/RedGuides/MQ2MoveUtils.git
+	branch = master
+[submodule "plugins/MQ2Nav"]
+	path = plugins/MQ2Nav
+	url = https://github.com/brainiac/MQ2Nav.git
+	branch = master
+[submodule "plugins/MQ2NetBots"]
+	path = plugins/MQ2NetBots
+	url = https://github.com/RedGuides/MQ2NetBots.git
+	branch = master
+[submodule "plugins/MQ2Rez"]
+	path = plugins/MQ2Rez
+	url = https://github.com/RedGuides/MQ2Rez.git
+	branch = master
+[submodule "plugins/MQ2Posse"]
+	path = plugins/MQ2Posse
+	url = https://github.com/RedGuides/MQ2Posse.git
+	branch = master
