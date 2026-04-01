@@ -63,3 +63,7 @@
 	path = plugins/MQ2Posse
 	url = https://github.com/RedGuides/MQ2Posse.git
 	branch = master
+[submodule "plugins/MQ2AutoLootSort"]
+	path = plugins/MQ2AutoLootSort
+	url = https://github.com/RedGuides/MQ2AutoLootSort.git
+	branch = master
