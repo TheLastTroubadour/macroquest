@@ -67,3 +67,7 @@
 	path = plugins/MQ2AutoLootSort
 	url = https://github.com/RedGuides/MQ2AutoLootSort.git
 	branch = master
+[submodule "plugins/MQ2GroupInfo"]
+	path = plugins/MQ2GroupInfo
+	url = https://github.com/RedGuides/MQ2GroupInfo.git
+	branch = master
