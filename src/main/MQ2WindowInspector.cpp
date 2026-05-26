@@ -2326,24 +2326,7 @@ public:
 #endif
 			DisplayDrawTemplate("Template", pWnd->DrawTemplate);
 
-			std::vector<int> runtimeTypeInts;
-			for (int i = 0; i < pWnd->RuntimeTypes.GetLength(); ++i)
-				runtimeTypeInts.push_back(pWnd->RuntimeTypes[i]);
-			std::string runtimeTypes = fmt::format("[{}]", fmt::join(runtimeTypeInts, ", "));
-
-			if (ColumnTreeNodeType2(&pWnd->RuntimeTypes, "Runtime Types", "ArrayClass2<int>", "%s", runtimeTypes.c_str()))
-			{
-				for (int i = 0; i < pWnd->RuntimeTypes.GetLength(); ++i)
-				{
-					char szLabel[10] = { 0 };
-					fmt::format_to(szLabel, "#{}", i + 1);
-					ColumnText(szLabel, "%s (%d)",
-						EWndRuntimeTypeToString(static_cast<EWndRuntimeType>(pWnd->RuntimeTypes[i])),
-						pWnd->RuntimeTypes[i]);
-				}
-
-				ImGui::TreePop();
-			}
+			// RuntimeTypes removed from CXWnd in May 2026 patch
 
 			CXRect positionRect = pWnd->Location;
 			if (ColumnCXRect("Position", &positionRect))
@@ -2442,7 +2425,7 @@ public:
 				ColumnCheckBox("Use in horizontal layout", &pWnd->bUseInLayoutHorizontal);
 				ColumnCheckBox("Use in vertical layout", &pWnd->bUseInLayoutVertical);
 				ColumnText("Anchors", "{ top=%d, right=%d, bottom=%d, left=%d }", pWnd->bTopAnchoredToTop, pWnd->bRightAnchoredToLeft, pWnd->bBottomAnchoredToTop, pWnd->bLeftAnchoredToLeft);
-				ColumnText("Offsets", "{ top=%d, right=%d, bottom=%d, left=%d", pWnd->TopOffset, pWnd->RightOffset, pWnd->BottomOffset, pWnd->LeftOffset);
+				ColumnText("Offsets", "{ right=%d, bottom=%d, left=%d }", pWnd->RightOffset, pWnd->BottomOffset, pWnd->LeftOffset); // TopOffset removed May 2026
 
 				// Alpha
 				ColumnCheckBox("Fade enabled", &pWnd->Fades);
@@ -2553,24 +2536,7 @@ public:
 		{
 			DisplayDrawTemplate("Template", pWnd->DrawTemplate);
 
-			std::vector<int> runtimeTypeInts;
-			for (int i = 0; i < pWnd->RuntimeTypes.GetLength(); ++i)
-				runtimeTypeInts.push_back(pWnd->RuntimeTypes[i]);
-			std::string runtimeTypes = fmt::format("[{}]", fmt::join(runtimeTypeInts, ", "));
-
-			if (ColumnTreeNodeType2(&pWnd->RuntimeTypes, "Runtime Types", "ArrayClass2<int>", "%s", runtimeTypes.c_str()))
-			{
-				for (int i = 0; i < pWnd->RuntimeTypes.GetLength(); ++i)
-				{
-					char szLabel[10] = { 0 };
-					fmt::format_to(szLabel, "#{}", i + 1);
-					ColumnText(szLabel, "%s (%d)",
-						EWndRuntimeTypeToString(static_cast<EWndRuntimeType>(pWnd->RuntimeTypes[i])),
-						pWnd->RuntimeTypes[i]);
-				}
-
-				ImGui::TreePop();
-			}
+			// RuntimeTypes removed from CXWnd in May 2026 patch
 
 			CXRect positionRect = pWnd->Location;
 			if (ColumnCXRect("Position", &positionRect))
@@ -2667,7 +2633,7 @@ public:
 				ColumnCheckBox("Use in horizontal layout", &pWnd->bUseInLayoutHorizontal);
 				ColumnCheckBox("Use in vertical layout", &pWnd->bUseInLayoutVertical);
 				ColumnText("Anchors", "{ top=%d, right=%d, bottom=%d, left=%d }", pWnd->bTopAnchoredToTop, pWnd->bRightAnchoredToLeft, pWnd->bBottomAnchoredToTop, pWnd->bLeftAnchoredToLeft);
-				ColumnText("Offsets", "{ top=%d, right=%d, bottom=%d, left=%d", pWnd->TopOffset, pWnd->RightOffset, pWnd->BottomOffset, pWnd->LeftOffset);
+				ColumnText("Offsets", "{ right=%d, bottom=%d, left=%d }", pWnd->RightOffset, pWnd->BottomOffset, pWnd->LeftOffset); // TopOffset removed May 2026
 
 				// Alpha
 				ColumnCheckBox("Fade enabled", &pWnd->Fades);

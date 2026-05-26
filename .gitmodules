@@ -71,3 +71,6 @@
 	path = plugins/MQ2GroupInfo
 	url = https://github.com/RedGuides/MQ2GroupInfo.git
 	branch = master
+[submodule "plugins/MQ2WinTitle"]
+	path = plugins/MQ2WinTitle
+	url = https://github.com/RedGuides/MQ2WinTitle.git

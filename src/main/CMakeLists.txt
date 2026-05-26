@@ -86,7 +86,6 @@ set(MQ2Main_HEADERS
     "emu/EmuExtensions.h"
     "GraphicsEngine.h"
     "GraphicsResources.h"
-    "ImGuiAlphaMask.h"
     "ImGuiBackend.h"
     "ImGuiManager.h"
     "Logging.h"
@@ -127,7 +126,6 @@ set(MQ2Main_OTHERFILES
     "../../data/resources/CHANGELOG.md"
     "../../data/resources/Zones.ini"
     "../../LICENSE.md"
-    "../../data/resources/ItemDB.txt"
 )
 
 source_group("Resource Files" FILES ${MQ2Main_OTHERFILES})

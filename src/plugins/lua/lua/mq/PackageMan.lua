@@ -141,7 +141,7 @@ PackageMan.InstallAndLoad = function(package_name, require_name)
             return Utils.Library.Include(require_name), message
         end
     end
-    return result, message
+    return nil, message
 end
 
 ---@param package_name string The package name from luarocks

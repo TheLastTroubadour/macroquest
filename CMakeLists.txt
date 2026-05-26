@@ -124,6 +124,7 @@ set(MQ_PLUGIN_SUBDIRS
     "src/plugins/map"
     "src/plugins/targetinfo"
     "src/plugins/xtarinfo"
+    "plugins/MQWarp"
 )
 
 set(MQ_TEST_SUBDIRS
@@ -150,7 +151,7 @@ if (MQ_BUILD_CUSTOM_PLUGINS)
         get_filename_component(MQ_CUSTOM_PLUGINS_FILE ${MQ_CUSTOM_PLUGINS_FILE} ABSOLUTE)
     endif()
 
-    detect_custom_plugins(MQ_CUSTOM_PLUGIN_SUBDIRS ${MQ_CUSTOM_PLUGINS_FILE})
+    detect_custom_plugins(MQ_CUSTOM_PLUGIN_SUBDIRS "${MQ_CUSTOM_PLUGINS_FILE}")
 
     # Add custom plugin subdirs to the main list, after converting if needed
     if(MQ_CUSTOM_PLUGIN_SUBDIRS)
