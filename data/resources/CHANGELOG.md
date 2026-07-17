@@ -1,3 +1,40 @@
+## 6/24/2026
+
+### Features
+
+- Added a `name` keyword to spawn searches for searching by name when the name would otherwise be interpreted as a class. For example, `name magician` searches for a spawn containing the name "magician" instead of matching the Magician class. Prefix the name with `=` for an exact match (e.g. `name =Magician`).
+
+## 6/23/2026
+
+### Features
+
+- Added a UI Settings menu to the loader
+- The loader's UI will now persist between sessions (if you had it open it remembers where you were). You can disable this in the new UI menu.
+
+### Bug Fixes
+
+- Fix loader showing edit dialogs twice in modals (popups)
+
+### Changes
+
+- Toggle Sliders will now behave like checkboxes in the loader
+
+## 6/17/2026
+
+### Bug Fixes
+
+- Fix issue where /removeaug would not use Perfected Augmentation Distiller (#1007)
+
+## 6/12/2026
+
+### Bug Fixes
+
+- Fix an issue where clicking on the right side of dropdown boxes in the loader would not open the dropdown.
+
+### Other Changes
+
+- Made modal dropdown boxes more clearly dropdown boxes in the loader
+
 ## 6/11/2026
 
 ### Features
